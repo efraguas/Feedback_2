@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.example.feedback_2b.databinding.SecondActivityBinding
 import com.example.feedback_2b.model.Pais
+import android.content.Intent
 
 class SecondActivity : AppCompatActivity() {
 
@@ -36,5 +37,10 @@ class SecondActivity : AppCompatActivity() {
 
         binding.nombre.text = "Pais: ${pais.nombre}"
         binding.poblacion.text = " Poblacion: ${pais.poblacion}M de personas"
+
+        binding.atras.setOnClickListener {
+            val intent = Intent(this,MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
