@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.feedback_2b.R
 import com.example.feedback_2b.model.Pais
 import com.bumptech.glide.Glide
+import com.example.feedback_2b.CheckboxActivity
 import com.example.feedback_2b.SecondActivity
 import com.example.feedback_2b.data.DataSet
 import com.google.android.material.snackbar.Snackbar
@@ -66,10 +67,19 @@ class AdapterBanderas(var lista: ArrayList<Pais>, var contexto: Context): Recycl
             contexto.startActivity(intent)
         }
 
+        holder.imagen_fila.setOnClickListener {
+            val intent = Intent(contexto, CheckboxActivity::class.java)
+            intent.putExtra("pais", DataSet.getPaises()[position])
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            contexto.startActivity(intent)
+        }
+
         holder.imagen_fila.setOnLongClickListener {
             Snackbar.make(holder.imagen_fila,"Pais: ${DataSet.getPaises()[position].nombre.toString()}",Snackbar.LENGTH_SHORT).show()
             true
         }
+
+
 
 
     }

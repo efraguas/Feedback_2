@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/paises"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/Spain"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/España"
+            app:layout_constraintEnd_toEndOf="@+id/paises"
+            app:layout_constraintStart_toStartOf="@+id/paises"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/noruega"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/noruega"
+            app:layout_constraintEnd_toEndOf="@+id/España"
+            app:layout_constraintStart_toStartOf="@+id/España"
+            app:layout_constraintTop_toBottomOf="@+id/España"
+            tools:ignore="DuplicateIds" />
+
+        <RadioButton
+            android:id="@+id/islandia"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/islandia"
+            app:layout_constraintEnd_toEndOf="@+id/argentina"
+            app:layout_constraintStart_toStartOf="@+id/argentina"
+            app:layout_constraintTop_toBottomOf="@+id/argentina" />
+
+        <RadioButton
+            android:id="@+id/alemania"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/alemania"
+
+            app:layout_constraintEnd_toEndOf="@+id/alemania"
+            app:layout_constraintStart_toStartOf="@+id/alemania"
+            app:layout_constraintTop_toBottomOf="@+id/alemania" />
+
+        <RadioButton
+            android:id="@+id/austria"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/austria"
+            app:layout_constraintEnd_toEndOf="@+id/francia"
+            app:layout_constraintStart_toStartOf="@+id/francia"
+            app:layout_constraintTop_toBottomOf="@+id/francia" />
+
+        <RadioButton
+            android:id="@+id/australia"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/australia"
+            app:layout_constraintEnd_toEndOf="@+id/noruega"
+            app:layout_constraintStart_toStartOf="@+id/noruega"
+            app:layout_constraintTop_toBottomOf="@+id/noruega" />
+
+        <RadioButton
+            android:id="@+id/francia"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/francia"
+            app:layout_constraintEnd_toEndOf="@+id/islandia"
+            app:layout_constraintStart_toStartOf="@+id/islandia"
+            app:layout_constraintTop_toBottomOf="@+id/islandia" />
+
+        <RadioButton
+            android:id="@+id/eeuu"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/eeuu"
+            app:layout_constraintEnd_toEndOf="@+id/sudafrica"
+            app:layout_constraintStart_toStartOf="@+id/sudafrica"
+            app:layout_constraintTop_toBottomOf="@+id/sudafrica" />
+
+        <RadioButton
+            android:id="@+id/argentina"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/argentina"
+            app:layout_constraintEnd_toEndOf="@+id/japon"
+            app:layout_constraintStart_toStartOf="@+id/japon"
+            app:layout_constraintTop_toBottomOf="@+id/japon" />
+
+        <RadioButton
+            android:id="@+id/sudafrica"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sudafrica"
+            app:layout_constraintEnd_toEndOf="@+id/eeuu"
+            app:layout_constraintStart_toStartOf="@+id/eeuu"
+            app:layout_constraintTop_toBottomOf="@+id/eeuu" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/atras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <Button
+        android:id="@+id/atras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/atras"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

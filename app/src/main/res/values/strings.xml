@@ -4,4 +4,14 @@
     <string name="poblacion">poblacion</string>
     <string name="pais">Pais</string>
     <string name="atras">Atras</string>
+    <string name="España">España</string>
+    <string name="argentina">Argentina</string>
+    <string name="alemania">Alemania</string>
+    <string name="francia">Francia</string>
+    <string name="noruega">Noruega</string>
+    <string name="islandia">Islandia</string>
+    <string name="sudafrica">Sudafrica</string>
+    <string name="austria">Austria</string>
+    <string name="australia">Australia</string>
+    <string name="eeuu">EE.UU</string>
 </resources>
